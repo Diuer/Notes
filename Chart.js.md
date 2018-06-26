@@ -1,6 +1,6 @@
 Chart.js
 ===
-> [Demo Link](https://codepen.io/diuer/full/WyyqOy)
+> [Demo Link](https://diuer.github.io/test-Chart.js/)
 ## Step1 使用Chart.js
 1. GitHub載最新Chart.js [連結](https://github.com/chartjs/Chart.js/releases/tag/v2.7.2)
 2. 使用Chart.js CDN [連結](https://cdnjs.com/libraries/Chart.js)
@@ -70,6 +70,42 @@ type: 'doughnut'
 …
 …
 ```
+2. 圖表邊框 修改index.js
+```
+//加在 datasets 裡
+datasets:[{
+    data: [12, 19, 3, 5, 2, 3],
+    borderWidth: 1, //邊框粗細
+    borderColor: '#000000', //邊框顏色
+    hoverBorderWidth: 3, //滑鼠移上去時的邊框粗細
+    hoverBorderColor: '#000000' //滑鼠移上去時的邊框顏色
+}]
+```
+> 注意hoverBorderWidth等的大小寫為固定的
+
+3. 圖表字體設置 修改index.js
+```
+//加在 new Chart之前
+Chart.defaults.global.defaultFontFamily='微軟正黑體'; //字體
+Chart.defaults.global.defaultFontSize=18; //字的大小
+Chart.defaults.global.defaultFontColor='#000000'; //字的顏色
+```
+4. 設置圖表基本顯示 修改index.js
+```
+//加在 datasets 後
+options: {
+    title: {
+        display: true, //標題顯示與否
+        text: 'This is a Table\'s title', //標題內容
+        fontSize: 25 //標題大小
+    },
+    legend: {
+        position: 'right' //圖例位置
+    }
+```
 
 
-[資料來源](http://www.chartjs.org/docs/latest/)
+
+## 資料來源
+1. http://www.chartjs.org/docs/latest/
+2. https://www.youtube.com/watch?v=sE08f4iuOhA
