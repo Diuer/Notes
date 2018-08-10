@@ -1,6 +1,7 @@
 Chart.js
 ===
 > [Demo Link](https://diuer.github.io/test-Chart.js/)
+> [Source Code](https://github.com/Diuer/test-Chart.js)
 ## Step1 使用Chart.js
 1. GitHub載最新Chart.js [連結](https://github.com/chartjs/Chart.js/releases/tag/v2.7.2)
 2. 使用Chart.js CDN [連結](https://cdnjs.com/libraries/Chart.js)
